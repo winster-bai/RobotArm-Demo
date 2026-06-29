@@ -1,0 +1,21 @@
+# df_arm — 依赖列表
+# 安装：pip install -r requirements.txt
+
+# 舵机通信（所有脚本必需）
+feetech-servo-sdk==1.0.0
+
+# 键盘监听（1_dfarm_keyboard_control.py, 2_dfarm_ee_control.py）
+pynput==1.7.7
+
+# Xbox 手柄（2_dfarm_xbox_ee_control.py）
+pygame==2.6.1
+
+# YOLO 视觉伺服（7_dfarm_yolo_pick.py）
+ultralytics>=8.3.0
+opencv-python>=4.8.0
+
+# VLM 摄像头分析（8_dfarm_vlm_watch.py）
+ollama>=0.3.0
+
+# 机械臂 API 服务（dfarm_server.py）
+flask>=3.0.0
